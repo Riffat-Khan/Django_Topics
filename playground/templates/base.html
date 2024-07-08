@@ -1,0 +1,19 @@
+<html>
+        {%block title%}{%endblock%}
+    <header>
+    </header>
+    <body>
+        <header>
+            <h1>My Site</h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+            {%block main%}{%endblock%}
+        <footer>
+            <p>&copy; 2024 My Site</p>
+        </footer>
+    </body>
+</html>
