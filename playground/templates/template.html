@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+{% for model_name, data in context.items %}
+  <h1>{{ model_name }}</h1>
+    <table border='1'>
+      {% for x in data %}
+        <tr>
+          <td>{{ x }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+    <br>
+{% endfor %}
+
+</body>
+</html>
