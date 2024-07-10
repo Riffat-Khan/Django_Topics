@@ -13,8 +13,6 @@ class Profile(models.Model):
     role = models.CharField(max_length=100, choices=ROLE_CHOICES)
     contact_number = models.CharField(max_length=15)
 
-    # def __str__(self):
-    #     return self.user.username
 
 class Project(models.Model):
     title = models.CharField(max_length=100)
