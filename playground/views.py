@@ -184,7 +184,7 @@ def queries(request):
                     ##################### F() #####################
     id_3 = Profile.objects.all()[2]
     id_3.user_id = F('user_id') + 2
-    id_3.save()
+    # id_3.save()
     
     
     
