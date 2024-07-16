@@ -1,0 +1,22 @@
+{% extends "hello.html" %}
+    {% load custom_tag %}
+    <html>
+        {% block title %}
+            <title>Members</title>
+        {% endblock %}
+        <body>
+            {% block content %}
+            <h1>Members</h1>
+            <ul>
+                {% for x in member %}
+                <li>
+                    {{ x.id }}. {{ x.firstname }} {{ x.lastname }}
+                </li>
+                <li>
+                    {{ x.firstname | toupper }}
+                </li>
+                {% endfor %}
+            </ul>
+            {% endblock %}
+        </body>
+    </html>

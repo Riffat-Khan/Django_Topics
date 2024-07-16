@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+<html>
+    {% block title %}
+    <title>Site</title>
+    {% endblock %}
+
+    {% block main %}
+    <main>
+        <p>{% lorem 1 b random %}</p>
+        <img src="google.png" alt="Image description" />
+    </main>
+    {% endblock %}
+</html>

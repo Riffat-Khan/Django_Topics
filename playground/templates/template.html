@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+    {% comment %} <h1>{{exists_query}}</h1> {% endcomment %}
+    {% comment %} <h1>{{count_query}}</h1>  {% endcomment %}
+
+{% for model_name, data in context.items %}
+    <h1>{{ model_name }}</h1>
+    {% if data|length %}
+        <table border='1'>
+        {% for x in data %}
+            <tr>
+                <td>{{ x }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <br>
+    {% else %} 
+        <h3>{{data}}</h3>
+    {% endif %}
+{% endfor %}
+</body>
+</html>
